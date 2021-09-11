@@ -16,20 +16,24 @@ int main()
 	cin >> B;
 	cin >> C;
 
-	if ((A + B) % C == 0 && C % B == 0)
+	if ((A + B) % C == 0)
 	{
-		cout << ((A + B) / C) - (C / B) << endl;
-	}
-	else if ((A + B) % C == 0 && C % B != 0)
-	{
-		cout << ((A + B) / C) + (C * B) << endl;
-	}
-	else
-	{
-		cout << A + B + C << endl;
+		if (C % B == 0)
+		{
+			cout << (A + B) / C - (C / B) << endl;
+		}
+		else if (B % C != 0)
+		{
+			cout << (A + B) / C + (C * B) << endl;
+		}
+		else
+		{
+			cout << A + B + C << endl;
+		}
 	}
 	return 0;
 }
+
 
 /*
 Ввести число N, которое обозначает некоторую ошибку. При помощи оператора switch расшифровать значение ошибки.
@@ -58,6 +62,7 @@ int main()
 	case 2: cout << "Ошибка записи файла" << endl;
 		break;
 	case 3: cout << "Не все поля определены" << endl;
+		break;
 	}
 	return 0;
 }
