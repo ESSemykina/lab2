@@ -1,45 +1,4 @@
 ﻿
-/*
-#include <iostream>
-
-
-using std::cin;
-using std::cout;
-using std::endl;
-
-int main()
-{
-	setlocale(LC_ALL, "Rus");
-	int x;
-	cin >> x;
-
-	if (x > 0)
-	{
-		cout << "Положительное" << endl;
-		if (x > 50)
-		{
-			cout <<"Больше 50" << endl;
-		}
-		else
-		{
-			cout << "Меньше 50" << endl;
-		}
-	}
-
-	else if (x < 0)
-	{
-		cout << "Отрицательное" << endl;
-	}
-
-	else
-	{
-		cout << "Равно нулю" << endl;
-	}
-	return 0;
-		
-
-}
-*/
 #include<iostream>
 
 using std::cin;
