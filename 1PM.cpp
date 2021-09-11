@@ -22,17 +22,19 @@ int main()
 		{
 			cout << (A + B) / C - (C / B) << endl;
 		}
-		else if (B % C != 0)
+		else
 		{
 			cout << (A + B) / C + (C * B) << endl;
 		}
-		else
-		{
-			cout << A + B + C << endl;
-		}
 	}
+	else
+	{
+		cout << A + B + C << endl;
+	}
+		
 	return 0;
 }
+
 
 
 /*
@@ -62,6 +64,8 @@ int main()
 	case 2: cout << "Ошибка записи файла" << endl;
 		break;
 	case 3: cout << "Не все поля определены" << endl;
+		break;
+	default: cout << "Ошибка ввода" << endl;
 		break;
 	}
 	return 0;
