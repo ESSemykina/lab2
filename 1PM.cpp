@@ -28,10 +28,36 @@ int main()
 	{
 		cout << A + B + C << endl;
 	}
+	return 0;
 }
+
 /*
 Ввести число N, которое обозначает некоторую ошибку. При помощи оператора switch расшифровать значение ошибки.
 Список ошибок:
 0 – все хорошо, 1 – ошибка чтения файла, 2 – ошибка записи файла, 3 – не все поля определены.
 Предусмотреть обработку ошибочного ввода N.
 */
+
+#include<iostream>
+
+using std::cin;
+using std::cout;
+using std::endl;
+
+int main()
+{
+	setlocale(LC_ALL, "Rus");
+	int N;
+	cin >> N;
+	switch (N)
+	{
+	case 0: cout << "Все хорошо" << endl;
+		break;
+	case 1: cout << "Ошибка чтения файла" << endl;
+		break;
+	case 2: cout << "Ошибка записи файла" << endl;
+		break;
+	case 3: cout << "Не все поля определены" << endl;
+	}
+	return 0;
+}
